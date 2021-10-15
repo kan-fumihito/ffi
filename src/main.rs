@@ -1,16 +1,7 @@
-extern crate libc;
-
-use libc::{c_char, c_void, size_t};
-use std::ffi::{CStr, CString};
-
-#[link(name = "hello", kind = "static")]
-extern "C" {
-    fn hello();
-}
+extern crate cmake_example;
 
 fn main() {
-    println!("hello rust");
     unsafe {
-        hello();
-    };
+        cmake_example::foo();
+    }
 }
