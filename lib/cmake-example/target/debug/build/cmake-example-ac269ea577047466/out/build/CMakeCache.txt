@@ -151,7 +151,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=cmake example for Rust
+CMAKE_PROJECT_NAME:STATIC=cmake-example
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/bin/ranlib
@@ -215,11 +215,20 @@ CMAKE_STRIP:FILEPATH=/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for ament_cmake_ros.
+ament_cmake_ros_DIR:PATH=ament_cmake_ros_DIR-NOTFOUND
+
 //Value Computed by CMake
 cmake example for Rust_BINARY_DIR:STATIC=/home/kan/Program/Rust/ffi/lib/cmake-example/target/debug/build/cmake-example-ac269ea577047466/out/build
 
 //Value Computed by CMake
 cmake example for Rust_SOURCE_DIR:STATIC=/home/kan/Program/Rust/ffi/lib/cmake-example/src/cpp
+
+//Value Computed by CMake
+cmake-example_BINARY_DIR:STATIC=/home/kan/Program/Rust/ffi/lib/cmake-example/target/debug/build/cmake-example-ac269ea577047466/out/build
+
+//Value Computed by CMake
+cmake-example_SOURCE_DIR:STATIC=/home/kan/Program/Rust/ffi/lib/cmake-example/src/cpp
 
 
 ########################
@@ -304,6 +313,14 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/kan/Program/Rust/ffi/lib/cmake-example/src/cpp
@@ -369,4 +386,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 
