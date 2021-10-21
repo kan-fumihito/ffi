@@ -1,7 +1,10 @@
 extern crate cmake_example;
 
 fn main() {
+    let i:i32;
     unsafe {
-        cmake_example::foo();
+        i=cmake_example::foo();
+        
     }
+    println!("{}",i);
 }

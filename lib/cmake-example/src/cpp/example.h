@@ -1,5 +1,6 @@
 
-void foo(void);
+int foo(void);
+int bar(void);
 int init_context(void);
 int create_node(
     const char *node_name,
@@ -11,3 +12,4 @@ int publish(
     int node_id,
     int publisher_id,
     const char *data);
+

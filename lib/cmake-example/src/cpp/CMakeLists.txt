@@ -41,8 +41,9 @@ target_include_directories(${TARGET}
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
+target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
 # specific order: dependents before dependencies
-ament_target_dependencies(${TARGET}
+ament_target_dependencies(${PROJECT_NAME}
   "ament_index_cpp"
   "libstatistics_collector"
   "rcl"

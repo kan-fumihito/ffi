@@ -25,11 +25,18 @@ static std::map<int, wasm_node_t *> node_pool;
 
 extern "C"
 {
-    void foo(void)
+    int foo(void)
     {
         std::cout << "Hello, C++" << std::endl;
+        return 42;
     }
-}
+
+
+    int bar(void)
+    {
+        std::cout << "Hello,bar C++" << std::endl;
+        return 42;
+    }
 
 int init_context(void)
 {
@@ -143,4 +150,5 @@ int publish(
         std::cout << "ret: " << ret << std::endl;
         return -1;
     }
+}
 }
