@@ -6,7 +6,7 @@
 #include <string>
 #include <map>
 
-#include "example.h"
+#include "rclwasm.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "rcl/publisher.h"
 #include "rcl/rcl.h"

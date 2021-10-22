@@ -7,7 +7,7 @@ fn main() {
     println!("cargo:rustc-link-search=native={}", dst.display());
 
     // staticライブラリとして他に利用するライブラリはなし
-    println!("cargo:rustc-link-lib=static=cmake-example");
+    println!("cargo:rustc-link-lib=static=rclwasm");
 
     // C++ソースコードの場合は必ずこれを追加すること
     println!("cargo:rustc-link-lib=dylib=stdc++");

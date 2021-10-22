@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-project("cmake-example" LANGUAGES CXX C)
+project("rclwasm" LANGUAGES CXX C)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(TARGET cmake-example)
+set(TARGET rclwasm)
 
 find_package(Threads REQUIRED)
 
@@ -28,7 +28,7 @@ find_package(Python3 REQUIRED COMPONENTS Interpreter)
 # 必ずstaticライブラリにビルドすること
 add_library(${TARGET}
   STATIC
-    example.cc
+  rclwasm.cpp
 )
 
 ################  application related  ################

@@ -1,8 +1,9 @@
-extern crate cmake_example;
+extern crate rclwasm;
 
 fn main() {
     unsafe {
-        cmake_example::foo();
-        cmake_example::bar();
+        let i = rclwasm::foo();
+        println!("return {} from rclwasm::foo.",i);
+        rclwasm::bar();
     }
 }
